@@ -22,7 +22,7 @@ teachersControllers.getAll = (req, res) => {
 
 
 teachersControllers.getOne = (req, res) => {
-    teachersDaos.getOne(teacherId)
+    teachersDaos.getOne(teacher_id)
         .then((teacher) => {
             if (teacher) {
                 res.render("editTeachers.ejs",{student});
