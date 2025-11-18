@@ -22,7 +22,7 @@ studentsControllers.getOne = (req, res) => {
     studentsDaos.getOne(req.params.student_id)
         .then((student) => {
             if (student) {
-                res.render("editTeachers.ejs",{student});
+                res.render("edit.ejs",{student});
             } else {
                 res.status(404).json({
                     message: "Student not found"
