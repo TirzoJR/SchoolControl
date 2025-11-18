@@ -25,7 +25,7 @@ teachersControllers.getOne = (req, res) => {
     teachersDaos.getOne(teacher_id)
         .then((teacher) => {
             if (teacher) {
-                res.render("editTeachers.ejs",{student});
+                res.render("editTeachers.ejs",{teacher});
             } else {
                 res.status(404).json({
                     message: "Teacher not found"
