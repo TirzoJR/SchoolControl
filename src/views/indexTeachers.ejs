@@ -148,10 +148,10 @@
                                     <td><%= teacher.salary %></td>
                                     <td><%= teacher.years_of_service %></td>
                                     <td>
-                                        <a href="/api/teachers/getOne/<%= teachers.teachers_id %>" class="btn btn-primary"> <i class="material-icons"> edit </i> </a>
+                                        <a href="/api/teachers/getOne/<%= teacher.teacher_id %>" class="btn btn-primary"> <i class="material-icons"> edit </i> </a>
                                     </td>
                                     <td>
-                                        <a href="/api/teachers/deleteOne/<%= teachers.teachers_id %>" class="btn btn-danger btn-sm"><i class="material-icons">delete</i></a>
+                                        <a href="/api/teachers/deleteOne/<%= teacher.teacher_id %>" class="btn btn-danger btn-sm"><i class="material-icons">delete</i></a>
                                     </td>
                                 </tr>
                                 <% }); %>
